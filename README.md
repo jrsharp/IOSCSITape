@@ -11,3 +11,6 @@ Discussion can be held on the Google Group mailing list: [ioscsitape-discuss](ht
 **BE ADVISED:** IOSCSITape is not yet intended for production use. It has had limited testing on a very limited set of hardware and is still in early development. Use at your own risk.
 
 _*Can you part with modern tape drives*, autoloaders/libraries, OS X SCSI adapters, or other related equipment? The IOSCSITape project could use donations of equipment to improve and better support a range of devices. Please get in touch with jesse.c.peterson-att-gmail if so. Please: only modern equipment and serious offers._
+
+NOTE: experimental Tiger support added - so far so good on Sony DDS2 drive
+

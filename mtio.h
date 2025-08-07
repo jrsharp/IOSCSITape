@@ -67,6 +67,17 @@
 #include <sys/appleapiopts.h>
 #include <sys/cdefs.h>
 
+/* Ensure we have necessary types for Tiger */
+#include <sys/types.h>
+
+#ifndef daddr_t
+typedef int32_t daddr_t;
+#endif
+
+#ifndef u_short
+typedef unsigned short u_short;
+#endif
+
 #ifdef	__APPLE_API_OBSOLETE
 
 /*

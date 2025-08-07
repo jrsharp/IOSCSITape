@@ -7,7 +7,24 @@
  *
  */
 
-#include <AssertMacros.h>
+/* Include necessary type definitions first */
+#include <sys/types.h>
+#include <sys/systm.h>
+
+/* AssertMacros.h not available in 10.4 SDK, define needed macros */
+#ifndef require
+#define require(assertion, exceptionLabel)  \
+    do {                                     \
+        if (!(assertion)) {                 \
+            goto exceptionLabel;            \
+        }                                    \
+    } while(0)
+#endif
+
+#ifndef ErrorExit
+#define ErrorExit ErrorExit
+#endif
+
 #include <sys/conf.h>
 #include <miscfs/devfs/devfs.h>
 #include <sys/errno.h>
